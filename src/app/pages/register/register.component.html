@@ -1,0 +1,22 @@
+<div class="register-form">
+  <form [formGroup]="registerForm" >
+    <div class="form-group">
+      <label for="fullName">Full Name</label>
+      <kendo-textbox formControlName="fullName" id="fullName"></kendo-textbox>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <kendo-textbox formControlName="email" id="email"></kendo-textbox>
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <kendo-textbox formControlName="password" id="password" type="password"></kendo-textbox>
+    </div>
+
+    <div class="form-group">
+      <button kendoButton type="submit" [disabled]="registerForm.invalid">Register</button>
+    </div>
+  </form>
+</div>
